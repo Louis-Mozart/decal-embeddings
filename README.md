@@ -1,7 +1,7 @@
 # Embedding-in-Degenerate-Clifford-Algebras
 This repo shows the implementation of DeCal where we consider the embeddings in Cl_pqr Clifford algebras.
 # How to use this repo?
-First install all the necessary packages: pip install requirements.txt
+First install all the necessary packages: pip install -r requirements.txt
 # Example of how to run the scripts
 ### Run the LES algorithm: 
 python run_Decal_LES.py --kg UMLS
