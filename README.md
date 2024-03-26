@@ -2,8 +2,9 @@
 
 Knowledge graph embedding has shown to be succesfull when using divisional algebras ($\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$, etc..) as these space are useful to model complex relations and pattern in a KG dataset. However, it exists no universal space to perform the embedding for all datasets as the space is congruent to the existing knowledge. Therefore, it can be difficult to decide, given a KG dataset in which space we will compute the embeddings. 
 
-One existing approach **[(Keci)](https://link.springer.com/chapter/10.1007/978-3-031-43418-1_34)** already tackle this problem by performing the embedding in a Clifford Algebra $Cl_{p,q}(\mathbb{R})$. This approach already generalize over baselines such as DistMult, ComplEx etc... but cannot generalize over approaches based on dual numbers. To tackle this, we developped our approach DeCaL which performs the embeddings into a degenerate Clifford Algebra $Cl_{p,q,r}(\mathbb{R})$. These spaces, allows generalizing over approaches based on dual numbers (which cannot be modelled using $Cl_{p,q}$) and capturing patterns that emanate from the absence of higher-order interactions between real and complex parts of entity embeddings. 
+One existing approach **[(Keci)](https://link.springer.com/chapter/10.1007/978-3-031-43418-1_34)** already tackle this problem by performing the embedding in a Clifford Algebra $Cl_{p,q}(\mathbb{R})$. This approach already generalize over baselines such as DistMult, ComplEx etc... but cannot generalize over approaches based on dual numbers. To tackle this, we developped our approach DeCaL which performs the embeddings into a degenerate Clifford Algebra $Cl_{p,q,r}(\mathbb{R})$. 
 
+These spaces, allows generalizing over approaches based on dual numbers (which cannot be modelled using $Cl_{p,q}$) and capturing patterns that emanate from the absence of higher-order interactions between real and complex parts of entity embeddings. 
 For the discovery of the extra parameter p,q and r we proposed four algorithms:
 
 ## Installation
@@ -32,7 +33,9 @@ wget https://files.dice-research.org/datasets/dice-embeddings/KGs.zip --no-check
 </details>
 
 # How to use this repo?
-First install all the necessary packages: pip install -r requirements.txt
+First install all the necessary packages using: 
+```bash
+ pip install -r requirements.txt ```
 
 ### Run the LES algorithm: 
 ```bash

@@ -43,7 +43,7 @@ def get_default_arguments(description=None):
     parser.add_argument('--optim', type=str, default='Adam',
                         help='An optimizer',
                         choices=['Adam', 'AdamW', 'SGD',"NAdam", "Adagrad", "ASGD"])
-    parser.add_argument('--embedding_dim', type=int, default=32,
+    parser.add_argument('--embedding_dim', type=int, default=16,
                         help='Number of dimensions for an embedding vector. ')
     parser.add_argument("--num_epochs", type=int, default=250, help='Number of epochs for training. ')
     parser.add_argument('--batch_size', type=int, default=1024,
@@ -128,13 +128,16 @@ def get_default_arguments(description=None):
         return parser.parse_args()
     return parser.parse_args(description)
 
-def main():
+# def main():
 
-    args = get_default_arguments()
-    if args.continual_learning:
-        ContinuousExecute(args).continual_start()
-    else:
-        Execute(get_default_arguments()).start()
+#     args = get_default_arguments()
+#     if args.continual_learning:
+#         ContinuousExecute(args).continual_start()
+#     else:
+#         Execute(get_default_arguments()).start()
+
+# if __name__ == '__main__':
+#     main()
 
 if __name__ == '__main__':
-    main()
+    Execute(get_default_arguments()).start()
