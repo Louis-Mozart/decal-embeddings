@@ -16,7 +16,7 @@ or
 ```bash
 pip install dicee
 ```
-<\details>
+</details>
 
 ## Download Knowledge Graphs
 ```bash
