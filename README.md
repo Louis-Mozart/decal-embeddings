@@ -13,14 +13,14 @@ pip3 install -e .
 ```
 or
 
-```bash
+``` bash
 pip install dicee
 ```
 </details>
 
 ## Download Knowledge Graphs
 <details><summary> Click me! </summary>
-```bash
+``` bash
 wget https://files.dice-research.org/datasets/dice-embeddings/KGs.zip --no-check-certificate && unzip KGs.zip
 ```
 </details>
@@ -28,9 +28,9 @@ wget https://files.dice-research.org/datasets/dice-embeddings/KGs.zip --no-check
 # How to use this repo?
 <details><summary> Click me! </summary>
 First, install all the necessary packages:
-```bash
+``` bash
 pip install -r requirements.txt
-  ```
+```
 </details>
 
 # Example of how to run the scripts
