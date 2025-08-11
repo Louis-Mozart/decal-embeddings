@@ -1,4 +1,4 @@
-## Embedding-in-Degenerate-Clifford-Algebras
+# Embedding-in-Degenerate-Clifford-Algebras
 This repo shows the implementation of the DeCal KGE model
 
 ## Installation
@@ -16,6 +16,8 @@ or
 ```bash
 pip install dicee
 ```
+<\details>
+
 ## Download Knowledge Graphs
 ```bash
 wget https://files.dice-research.org/datasets/dice-embeddings/KGs.zip --no-check-certificate && unzip KGs.zip
