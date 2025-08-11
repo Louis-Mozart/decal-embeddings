@@ -1,4 +1,4 @@
-# Embedding-in-Degenerate-Clifford-Algebras
+## Embedding-in-Degenerate-Clifford-Algebras
 This repo shows the implementation of the DeCal KGE model
 
 ## Installation
