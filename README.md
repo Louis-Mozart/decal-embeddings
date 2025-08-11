@@ -30,9 +30,6 @@ wget https://files.dice-research.org/datasets/dice-embeddings/KGs.zip --no-check
 <details><summary> Click me! </summary>
   
 First, install all the necessary packages:
-```bash
-python main.py --path_dataset_folder ../decal-embeddings/KGs/FB15k-237 --p 1 --q 1 --r 5
-```
 
 ```bash
 pip install -r requirements.txt
