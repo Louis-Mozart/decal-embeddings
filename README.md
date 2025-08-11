@@ -26,7 +26,7 @@ wget https://files.dice-research.org/datasets/dice-embeddings/KGs.zip --no-check
 ```
 </details>
 
-# How to use this repo?
+## How to use this repo?
 <details><summary> Click me! </summary>
   
 First, install all the necessary packages:
@@ -34,11 +34,6 @@ First, install all the necessary packages:
 ```bash
 pip install -r requirements.txt
 ```
-</details>
-
-# Example of how to run the scripts
-<details><summary> Click me! </summary>
-
 ### Run the LES algorithm: 
 ```bash
 python run_Decal_LES.py --kg UMLS
