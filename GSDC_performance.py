@@ -10,8 +10,8 @@ class show_performance:
     def __init__(self, data, time,name):
 
         '''Inputs: 
-           time: choose among Train, Val and Test
-           data: a csv file comming from the results_keci function'''
+           time: choose among Train, Val, and Test
+           data: a CSV file coming from the results_keci function'''
         
         self.data = data
         self.time = time
