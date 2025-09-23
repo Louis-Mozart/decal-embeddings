@@ -22,7 +22,7 @@ class show_performance:
         
                     
     def plot3d(self):
-        """This plot will show the distribution of all G """
+        """This plot will show the distribution of all possible combinatiojn in the GSDC """
 
         fig = plt.figure(figsize=(8, 6))
         ax = fig.add_subplot(111, projection='3d')
