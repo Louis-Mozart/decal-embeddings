@@ -2,7 +2,7 @@ from Decal import Decal_exp
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--kg", type=str, default='KGs/UMLS')
+parser.add_argument("--kg", type=str, default='UMLS')
 
 args = parser.parse_args()
 
