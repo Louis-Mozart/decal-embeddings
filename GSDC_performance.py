@@ -22,7 +22,7 @@ class show_performance:
         
                     
     def plot3d(self):
-        """This plot will show the dist """
+        """This plot will show the distribution of all G """
 
         fig = plt.figure(figsize=(8, 6))
         ax = fig.add_subplot(111, projection='3d')
