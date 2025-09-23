@@ -86,9 +86,6 @@ def create_data(kg,num_subgraphs,tensor_size,step):
 def tensor_data(file_path,N):
     
     for folder in os.listdir(file_path):
-        
-
-
         folder_path  = os.path.join(file_path, folder)
         train_path   = os.path.join(folder_path, 'train_set.npy')
         path_ent_idx = os.path.join(folder_path, 'entity_to_idx.p')
@@ -97,8 +94,6 @@ def tensor_data(file_path,N):
         path_rel_emb = os.path.join(folder_path, 'DeCaL_relation_embeddings.csv')
 
         train_data = np.load(train_path)
-
-
         D_i = torch.zeros(N,48) #N is the size of the tensor
         for i in range(len(D_i)):
             indx_triple = train_data[i,:]
@@ -111,7 +106,7 @@ def tensor_data(file_path,N):
 
 def ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb):
 
-    # Here we retrieve final entities embedings we just need the indx (value == indx) of and entity from the file above:
+    # Here we retrieve final entities' embedings we just need the indx (value == indx) of and entity from the file above:
     
     with open(path_ent_idx, 'rb') as file:
         ent_to_idx = pickle.load(file)
