@@ -22,6 +22,7 @@ class show_performance:
         
                     
     def plot3d(self):
+        """This plot will show the dist """
 
         fig = plt.figure(figsize=(8, 6))
         ax = fig.add_subplot(111, projection='3d')
@@ -43,9 +44,6 @@ class show_performance:
         # Set fontsize for z-axis ticks specifically
         ax.tick_params(axis='z', labelsize=14)  #
       
-
-        #ax.set_title("Effect of p, q, and r on MRR for the test data")
-
         ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
         ax.yaxis.set_major_locator(plt.MaxNLocator(integer=True))
         ax.zaxis.set_major_locator(plt.MaxNLocator(integer=True))
