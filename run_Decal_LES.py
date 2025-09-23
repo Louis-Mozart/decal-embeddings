@@ -13,7 +13,7 @@ path_dataset = f"../decal-embeddings/KGs/{args.kg}"
 Num_epochs = 250
 Batch_size = 1024
 
-dat = Decal_exp(emb_dim=16,path_main = path_main,folder_name = folder_name,Experiments_path=Experiments_path,\
-               num_epochs=250,batch_size=1024, scoring_technique= "KvsAll",path_dataset=path_dataset)
+dat = Decal_exp(emb_dim=16, path_main=path_main, folder_name=folder_name, Experiments_path=Experiments_path,\
+               num_epochs=250, batch_size=1024, scoring_technique="KvsAll", path_dataset=path_dataset)
 
-params = dat.LES(params_range = range(5))
+params = dat.LES(params_range=range(5))
