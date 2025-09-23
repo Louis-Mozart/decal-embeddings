@@ -13,7 +13,8 @@ class show_performance:
                time: choose among Train, Val, and Test
                data: a CSV file coming from the results_keci function
            Outputs:
-               3d plots of all possible representations
+               3d plots of all possible triple points
+           Note that the GSDC would have been trained already with results available in the data file.
         '''
         
         self.data = data
