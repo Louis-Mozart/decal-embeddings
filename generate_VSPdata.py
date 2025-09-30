@@ -99,8 +99,7 @@ def tensor_data(file_path,N):
             indx_triple = train_data[i,:]
             h,r,t = ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb)
             h_r_t = torch.concatenate((h,r,t),dim=0)
-            D_i[i,:] = h_r_t
-            
+            D_i[i,:] = h_r_t        
     return D_i
 
 
@@ -127,7 +126,6 @@ def ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb)
     
     if 'WN18' in path_ent_emb:
         tail_id_to_extract = int(tail)
-        
     else:
         tail_id_to_extract = tail
         
