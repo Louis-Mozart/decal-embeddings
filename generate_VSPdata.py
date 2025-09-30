@@ -136,7 +136,7 @@ def ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb)
 
 
 
-    # Here we retrieve final entities' embeddings, we need the indx of a relation:
+    # Here we retrieve final entities' embeddings, we need the index of a relation:
     
     with open(path_rel_idx, 'rb') as file:
         rel_to_idx = pickle.load(file)
@@ -152,7 +152,7 @@ def ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb)
 
 
 def random_walk_subgraph(original_folder, output_base_folder, num_subgraphs):
-    # returns the name of folders where the subgraphes has been created.
+    # returns the name of folders where the subgraphs has been created.
     l = []
     for i in range(1, num_subgraphs + 1):
         output_folder = f"{output_base_folder}_{i}"
