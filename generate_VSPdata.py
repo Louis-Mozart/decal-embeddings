@@ -164,7 +164,7 @@ def random_walk_subgraph(original_folder, output_base_folder, num_subgraphs):
         for filename in ["test.txt", "train.txt", "valid.txt"]:
             shutil.copy(os.path.join(original_folder, filename), os.path.join(output_folder, filename))
             
-            # Perform random walk and sample subgraph for every files
+            # Perform random walk and sample subgraph for every file
             sampled_subgraph = random_walk(original_folder, filename)
 
             # Write subgraph to text.txt
