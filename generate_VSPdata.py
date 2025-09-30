@@ -106,7 +106,7 @@ def tensor_data(file_path,N):
 
 def ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb):
 
-    # Here we retrieve final entities' embeddings, we just need the indx (value == indx) of an entity from the file above:
+    # Here we retrieve final entities' embeddings, we just need the index (value == indx) of an entity from the file above:
     
     with open(path_ent_idx, 'rb') as file:
         ent_to_idx = pickle.load(file)
