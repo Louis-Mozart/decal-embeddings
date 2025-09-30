@@ -17,9 +17,7 @@ parser.add_argument("--kg", type=str, default='')
 parser.add_argument("--num_subgraphs", type=int, default=100, help = "Number of subfolder for the given KG to be created")
 parser.add_argument("--step", type = str, default='training', help = 'Do you want to predict or train', choices = ["training","prediction"] )
 parser.add_argument("--tensor_size", type = int, default = 5000, help = 'Tensor data size as input in the NN')
-
 args = parser.parse_args()
-
 
 torch_seed = 0
 torch.manual_seed(torch_seed)
@@ -130,9 +128,6 @@ def ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb)
         tail_id_to_extract = tail
         
     vector_tail_emb = tail_emb.loc[tail_id_to_extract].values
-
-
-
 
     # Here we retrieve final entities' embeddings, we need the index of a relation:
     
