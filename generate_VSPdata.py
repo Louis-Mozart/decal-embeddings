@@ -184,7 +184,7 @@ def random_walk(original_folder,filename): # This is implemented accordding to f
             KG.add(triple)
 
     if filename == 'train.txt':
-        #split to the same ratio as UMLS the smallest data then the quickest to embed.
+        #split to the same ratio as UMLS, the smallest data, then the quickest to embed.
         
         ratio = 5116/len(KG) 
         
@@ -196,7 +196,7 @@ def random_walk(original_folder,filename): # This is implemented accordding to f
         ratio = 652/len(KG)
         
 
-    # Perform random walk
+    # Perform a random walk
     E = set()
     kg = []
     start_entity = random.choice([triple[0] for triple in KG])
