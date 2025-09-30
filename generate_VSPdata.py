@@ -136,7 +136,7 @@ def ent_rel_emb(indx_triple,path_ent_idx,path_rel_idx,path_ent_emb,path_rel_emb)
 
 
 
-    # Here we retrieve final entities' embedings we just need the indx of a relation:
+    # Here we retrieve final entities' embeddings, we just need the indx of a relation:
     
     with open(path_rel_idx, 'rb') as file:
         rel_to_idx = pickle.load(file)
