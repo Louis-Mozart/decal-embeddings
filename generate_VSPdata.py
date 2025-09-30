@@ -30,7 +30,7 @@ random.seed(python_random_seed)
 
 
 def create_data(kg,num_subgraphs,tensor_size,step):
-    '''This function takes the list of subfolder names'''
+    ''' This function takes the list of subfolder names '''
     
     N = tensor_size
     original_kg_folder = f"../decal-embeddings/KGs/{kg}"
