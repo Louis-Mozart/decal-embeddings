@@ -18,7 +18,7 @@ class Decal_exp:
            em_dim: embedding dimension
            path_main: path to the main.py file
            folder_name: name of the folder that will contain the experimentions
-           Experiments_path: path were the experiments will be saved.'''
+           Experiments_path: path where the experiments will be saved.'''
 
         self.path_main = path_main
         self.Experiments_path = Experiments_path
