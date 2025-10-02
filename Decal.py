@@ -43,7 +43,7 @@ class Decal_exp:
         
 
     def GSDC(self, parameter_values:list) -> pd.DataFrame : #GSDC seach
-        '''This function store the performance of Decal into a dataframe for all possible values of p,q,r in parameter_values.
+        '''This function stores the performance of Decal into a dataframe for all possible values of p,q,r in parameter_values.
            If not specified, parameter_values =[0,1,...,emb_dim] '''
 
         if parameter_values == None:
@@ -170,7 +170,7 @@ class Decal_exp:
 
 
     def MRR(self, p,q,r):
-        '''Return the achieved MRR of Keci_r for a fixed p,q and r on the train data set'''
+        '''Return the achieved MRR of Keci_r for a fixed p,q, and r on the train data set'''
 
         
         folder_name = f"{p}_{q}_{r}"
