@@ -14,7 +14,7 @@ def get_default_arguments(description=None):
                         help="The path of a folder containing train.txt, and/or valid.txt, and/or test.txt"
                              ",e.g., KGs/UMLS")
     parser.add_argument("--sparql_endpoint", type=str, default=None,
-                        help="An endpoint of a triple store, e.g. 'http://localhost:3030/mutagenesis/'. ")
+                        help="An endpoint of a triple store, e.g., 'http://localhost:3030/mutagenesis/'. ")
     parser.add_argument("--path_single_kg", type=str, default=None,#"KGs/UMLS/train.txt",
                         help="Path of a file corresponding to the input knowledge graph")
     parser.add_argument("--path_to_store_single_run", type=str, default=None,
