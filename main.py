@@ -74,7 +74,7 @@ def get_default_arguments(description=None):
                              "implies that gradients are accumulated at every second mini-batch")
     parser.add_argument('--num_folds_for_cv', type=int, default=0,
                         help='Number of folds in k-fold cross validation.'
-                             'If >2 ,no evaluation scenario is applied implies no evaluation.')
+                             'If >2, no evaluation scenario is applied implies no evaluation.')
     parser.add_argument("--eval_model", type=str, default="train_val_test",
                         choices=["None", "train", "train_val", "train_val_test", "test"],
                         help='Evaluating link prediction performance on data splits. ')
