@@ -11,7 +11,7 @@ def get_default_arguments(description=None):
     # Default Trainer param https://pytorch-lightning.readthedocs.io/en/stable/common/trainer.html#methods
     # Data-related arguments
     parser.add_argument("--path_dataset_folder", type=str, default="../decal-embeddings/KGs/FB15k-237",
-                        help="The path of a folder containing train.txt, and/or valid.txt and/or test.txt"
+                        help="The path of a folder containing train.txt, and/or valid.txt, and/or test.txt"
                              ",e.g., KGs/UMLS")
     parser.add_argument("--sparql_endpoint", type=str, default=None,
                         help="An endpoint of a triple store, e.g. 'http://localhost:3030/mutagenesis/'. ")
