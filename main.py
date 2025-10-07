@@ -6,7 +6,7 @@ import argparse
 
 
 def get_default_arguments(description=None):
-    """Extends PyTorch Lightning Trainer's arguments with ours."""
+    """ Extends PyTorch Lightning Trainer's arguments with ours."""
     parser = pl.Trainer.add_argparse_args(argparse.ArgumentParser(add_help=False))
     # Default Trainer param https://pytorch-lightning.readthedocs.io/en/stable/common/trainer.html#methods
     # Data-related arguments
