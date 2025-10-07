@@ -34,7 +34,7 @@ def get_default_arguments(description=None):
                                  "Pykeen_TransE", "Pykeen_TransF", "Pykeen_TransH",
                                  "Pykeen_TransR", "Pykeen_TuckER", "Pykeen_ComplEx","DeCaL"],
                         help="Available knowledge graph embedding models. "
-                             "To use other knowledge graph embedding models available in python, e.g.,"
+                             "To use other knowledge graph embedding models available in Python, e.g.,"
                              "**Pykeen_BoxE** and add this into choices")
     parser.add_argument('--optim', type=str, default='Adam',
                         help='An optimizer',
