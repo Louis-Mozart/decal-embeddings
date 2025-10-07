@@ -24,7 +24,7 @@ def get_default_arguments(description=None):
                              "that contains related data about embeddings.")
     parser.add_argument("--save_embeddings_as_csv", action="store_true",
                         help="A flag for saving embeddings in csv file.")
-    # Model related arguments
+    # Model-related arguments
     parser.add_argument("--model", type=str,
                         default="DeCaL",
                         choices=["ConEx", "AConEx", "ConvQ", "AConvQ", "ConvO", "AConvO", "QMult",
