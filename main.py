@@ -86,7 +86,7 @@ def get_default_arguments(description=None):
     parser.add_argument("--num_of_output_channels", type=int, default=2,
                         help="# of output channels in convolution")
     parser.add_argument("--num_core", type=int, default=2,
-                        help='Number of cores to be used. 0 implies using single CPU')
+                        help='Number of cores to be used. 0 implies using a single CPU')
     parser.add_argument("--random_seed", type=int, default=0,
                         help='Seed for all, see pl seed_everything().')
     parser.add_argument("--sample_triples_ratio", type=float, default=None, help='Sample input data.')
