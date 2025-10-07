@@ -32,7 +32,7 @@ def get_default_arguments(description=None):
                                  "Pykeen_MuRE", "Pykeen_QuatE", "Pykeen_DistMult", "Pykeen_BoxE", "Pykeen_CP",
                                  "Pykeen_HolE", "Pykeen_ProjE", "Pykeen_RotatE",
                                  "Pykeen_TransE", "Pykeen_TransF", "Pykeen_TransH",
-                                 "Pykeen_TransR", "Pykeen_TuckER", "Pykeen_ComplEx","DeCaL"],
+                                 "Pykeen_TransR", "Pykeen_TuckER", "Pykeen_ComplEx", "DeCaL"],
                         help="Available knowledge graph embedding models. "
                              "To use other knowledge graph embedding models available in Python, e.g.,"
                              "**Pykeen_BoxE** and add this into choices")
