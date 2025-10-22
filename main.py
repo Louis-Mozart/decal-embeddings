@@ -8,7 +8,7 @@ import argparse
 def get_default_arguments(description=None):
     """ Extends PyTorch Lightning Trainer's arguments with ours."""
     parser = pl.Trainer.add_argparse_args(argparse.ArgumentParser(add_help=False))
-    # Default Trainer param https://pytorch-lightning.readthedocs.io/en/stable/common/trainer.html#methods
+    # Default Trainer param https://pytorch-lightning.readthedocs.io/en/stable/common/trainer.html 
     # Data-related arguments
     parser.add_argument("--path_dataset_folder", type=str, default="../decal-embeddings/KGs/FB15k-237",
                         help="The path of a folder containing train.txt, and/or valid.txt, and/or test.txt"
