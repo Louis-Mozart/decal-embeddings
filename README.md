@@ -5,7 +5,7 @@ This repo shows the implementation of the DeCal KGE model
 <details><summary> Click me! </summary>
 First, make sure you have Anaconda installed
 
-### Installation from Source
+### Installation from Source without a virtual environment
 ``` bash
 git clone https://github.com/Louis-Mozart/decal-embeddings
 conda create -n dice python=3.10.13 --no-default-packages && conda activate dice && cd Embedding-in-Degenerate-Clifford-Algebras &&
