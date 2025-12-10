@@ -1,5 +1,5 @@
 # Embedding-in-Degenerate-Clifford-Algebras: DeCaL
-This repo shows the implementation of the DeCal variants 
+This repo shows the implementation of the DeCal variants (GS, GSDC, VSP, and LES)
 
 ## Installation
 <details><summary> Click me! </summary>
