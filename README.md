@@ -26,7 +26,7 @@ wget https://files.dice-research.org/datasets/dice-embeddings/KGs.zip --no-check
 ```
 </details>
 
-## How to use this repo?
+## How to start?
 <details><summary> Click me! </summary>
   
 First, install all the necessary packages:
